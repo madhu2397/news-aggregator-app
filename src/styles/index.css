@@ -1,2 +1,510 @@
 @import "./reset.css";
 
+
+body{
+
+  background: rgb(15, 15, 15);
+}
+
+
+        .main-head{
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        border: 1px solid white;
+    border-radius: 2px;   
+            text-align: center;
+            width: 30%;
+            padding: 5px;
+            font-weight: normal;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+
+}
+
+
+          .search-container{
+            width: 100%;
+            margin: auto;
+            margin-top: 15px;
+
+            input{
+              width: 100%;
+              
+              height: 25px;
+              background: transparent;
+              color: white;
+              padding: 0px;
+              border-top-style: hidden;
+              border-right-style: hidden;
+              border-left-style: hidden;
+              border-bottom-style: groove;
+            }
+          }
+
+
+
+          .search-bar {
+            margin-top: 4%;
+            margin-left: 5%;
+            margin-bottom: 70px;
+
+          }
+          
+          #search {
+            width: 92%;
+    height: 30px;
+    background-color: black;
+    font-size: large;
+    padding: 20px;
+    font-size: 30px;
+    color: white;
+    border-top: black;
+    border-left: black;
+    border-right: black;
+          }
+        
+          ul{
+
+            list-style-type: none;
+          }
+  #news-articles{
+
+            
+                      font-family: 'Times New Roman', Times, serif;
+
+                      display: flex;
+
+                      flex-direction: row;
+                      flex-wrap: wrap;
+                      justify-content: space-between;
+                      
+          }
+
+            .container{
+              display: flex;
+          
+            border-radius: 5px;
+    
+              width: 23%;
+              border: 5px solid rgb(59, 59, 59); 
+              margin-bottom: 20px;
+            }
+              
+              li{
+                
+               
+                list-style-type: none;
+               
+                
+               
+            }
+            li:hover{
+                box-shadow:2px 3px 8px 0px; 
+            }
+        
+               
+            .article{
+
+               //display: flex;
+                
+               //flex-direction: row;
+               //flex-wrap: wrap;
+              
+              
+              width: 100%;
+              margin: 1px;
+              padding: 10px;
+              
+                background: rgb(41, 38, 38);
+                border:1px solid black;
+                border-radius: 5px;
+              }
+
+              .article:hover{
+
+                border: 1px solid blue;
+
+              }
+          
+              
+              
+          
+                .article-img{
+
+                  width:100%;
+                  height:200px;
+
+                
+              }
+
+                
+
+                 
+                .article-title{
+
+                  
+                  font-family:Arial, Helvetica, sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+
+                  text-align: justify;
+                  color: white;
+                  font-size: 15px;
+                  
+
+                
+                }
+                
+              
+                
+                  
+                .article-description{
+
+                  font-size: 13px;
+                  color: rgb(172, 169, 169);
+                  text-align: justify;
+                  color: rgb(199, 193, 193);
+
+                
+                }
+              
+
+              
+                .article-author{
+
+                  color: blue;
+                  
+                  width: 100%;
+        
+                  text-align: right;
+                  position: relative;
+                  bottom: 0px;
+                  font-size: 13px;
+                  margin-right: 0%;
+                }
+              
+
+              .article-link{
+
+                color: white;
+                text-decoration: none;
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 10px;
+                text-align: justify;
+                font-weight: normal;
+
+              
+
+              }
+
+            
+
+            
+              
+            
+
+                
+            .not-found{
+              color: white;
+              
+            
+          }
+          
+            .load{
+              color: white;
+              svg{
+                height : 80px;
+                width: 80px;
+                fill: rgb(123, 124, 124) ;
+                transform-origin: 44% 50%;
+                animation: rotate 1.5s infinite linear;
+            }
+            @keyframes rotate {
+                0%{
+                    transform: rotate(0);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            }
+          
+        
+
+    
+
+
+//end of desktop view 
+
+
+@media screen and (max-width: 767px)
+{
+    
+
+body{
+
+    background: rgb(15, 15, 15);
+}
+    
+
+        .main-head{
+
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+        border: 1px solid white;
+    border-radius: 2px;   
+            text-align: center;
+            width: 60%;
+            padding: 3px;
+            font-weight: normal;
+            justify-content: center;
+            align-items: center;
+            margin: 0 auto;
+            font-size: 15px;
+
+}
+
+
+
+        .search-container{
+          width: 100%;
+          margin: auto;
+          margin-top: 15px;
+
+          input{
+                width: 100%;
+                
+                height: 25px;
+                background: transparent;
+                color: white;
+                padding: 0px;
+                border-top-style: hidden;
+                border-right-style: hidden;
+                border-left-style: hidden;
+                border-bottom-style: groove;
+          }
+        }
+        .search-bar {
+          margin-top: 4%;
+          margin-left: 5%;
+          margin-bottom: 70px;
+        }
+        
+        #search {
+          width: 92%;
+         }
+      
+
+        //list of news
+
+
+
+
+        
+
+
+        ul{
+
+          list-style-type: none;
+        }
+
+
+
+          #news-articles{
+
+            
+          font-family: 'Times New Roman', Times, serif;
+
+          display: flex;
+
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: space-between;
+           
+          }
+
+            .container{
+              display: flex;
+          
+            border-radius: 5px;
+    
+              width: 100%;
+              border: 5px solid rgb(59, 59, 59); 
+              margin-bottom: 20px;
+              
+               
+            }
+
+
+              .article{
+
+               //display: flex;
+                
+               //flex-direction: row;
+               //flex-wrap: wrap;
+              
+              
+              width: 100%;
+              margin: 1px;
+              padding: 5px;
+              
+                background: rgb(59, 59, 59);
+                border:1px solid black;
+                border-radius: 5px;
+                
+              }
+
+              .article:hover{
+
+                border: 1px solid blue;
+
+              }
+
+               
+              
+      
+
+                .article-img{
+
+                  width:100%;
+                  height:200px;
+
+                }
+              
+
+                
+
+                  
+
+                .article-title{
+
+                  
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-weight: normal;
+                  font-style: normal;
+                  font-size: 15px;
+                  text-align: justify;
+                }
+              
+              
+
+                .article-description{
+
+                  font-size: 14px;
+                  color: rgb(199, 193, 193);
+                  
+
+
+
+                }
+
+                .article-author{
+
+                  color: blue;
+                  
+                  width: 100%;
+        
+                  text-align: right;
+                  position: relative;
+                  bottom: 0px;
+                  font-size: 12px;
+                }
+                .article-link{
+
+                  color: white;
+                  text-decoration: none;
+                  font-family: Arial, Helvetica, sans-serif;
+                  font-size: 10px;
+                  text-align: justify;
+                  font-weight: normal;
+  
+                
+
+              }
+
+            
+            }
+
+
+        
+              .not-found{
+                color: white;
+                
+                
+              
+            }
+            
+            .load{
+              color: white;
+              svg{
+                height : 80px;
+                width: 80px;
+                fill: rgb(123, 124, 124) ;
+                transform-origin: 44% 50%;
+                animation: rotate 1.5s infinite linear;
+            }
+            @keyframes rotate {
+                0%{
+                    transform: rotate(0);
+                }
+                100%{
+                    transform: rotate(360deg);
+                }
+            }
+            }
+          
+        
+
+    
+
+
+
+
+     
+
+  
+/////////////////////////////////////////////////////////////////////////////////
+@keyframes unfoldIn {
+    0% {
+      transform: scaleY(0.005) scaleX(0);
+    }
+    50% {
+      transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+      transform: scaleY(1) scaleX(1);
+    }
+  }
+  
+  @keyframes unfoldOut {
+    0% {
+      transform: scaleY(1) scaleX(1);
+    }
+    50% {
+      transform: scaleY(0.005) scaleX(1);
+    }
+    100% {
+      transform: scaleY(0.005) scaleX(0);
+    }
+  }
+  
+  @keyframes zoomIn {
+    0% {
+      transform: scale(0);
+    }
+    100% {
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes zoomOut {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(0);
+    }
+  }
+  
