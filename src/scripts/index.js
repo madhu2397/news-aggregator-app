@@ -51,10 +51,10 @@ async function reterieve(searchValueText="")
     
     if(searchValueText!="")
     {
-        url=`https://newsapi.org/v2/everything?q=${searchValueText}&apikey=${apikey}`;
+        let url=`https://newsapi.org/v2/everything?q=${searchValueText}&apikey=${apikey}`;
     }
     else{
-        url=`https://newsapi.org/v2/top-headlines?country=in&apikey=${apikey}`;
+        let url=`https://newsapi.org/v2/top-headlines?country=in&apikey=${apikey}`;
     }
     const responce = await fetch(url);
     //console.log(url);
