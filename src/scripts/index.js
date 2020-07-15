@@ -46,15 +46,16 @@ catch(error){
 
 async function reterieve(searchValueText="")
 {
+    let url;
     try{
     article_area.innerHTML='<p class="load">News are  loading...</p>';
     
     if(searchValueText!="")
     {
-        let url=`https://newsapi.org/v2/everything?q=${searchValueText}&apikey=${apikey}`;
+         url=`https://newsapi.org/v2/everything?q=${searchValueText}&apikey=${apikey}`;
     }
     else{
-        let url=`https://newsapi.org/v2/top-headlines?country=in&apikey=${apikey}`;
+         url=`https://newsapi.org/v2/top-headlines?country=in&apikey=${apikey}`;
     }
     const responce = await fetch(url);
     //console.log(url);
@@ -96,7 +97,7 @@ async function searchvalue(event){
 
 function start()
 {
-    console.log("onload")//comment to onload start function
+    console.log("onload");//comment to onload start function
     document.getElementById("search").addEventListener('keypress',searchvalue);
     reterieve();
 
